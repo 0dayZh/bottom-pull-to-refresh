@@ -99,7 +99,7 @@
     if (self = [super initWithFrame:frame]) {
         
         [self setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin];
-        [self setBackgroundColor:[UIColor colorWithWhite:0.75f alpha:1.0f]];
+        [self setBackgroundColor:[UIColor clearColor]];
         
         containerView_ = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, CGRectGetWidth(frame), CGRectGetHeight(frame))];
         
@@ -117,7 +117,7 @@
         
         [containerView_ addSubview:iconImageView_];
         
-        loadingActivityIndicator_ = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        loadingActivityIndicator_ = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         [loadingActivityIndicator_ setCenter:[iconImageView_ center]];
         [loadingActivityIndicator_ setHidesWhenStopped:YES];
         [loadingActivityIndicator_ setAutoresizingMask:UIViewAutoresizingFlexibleRightMargin];
@@ -129,7 +129,7 @@
         
         messageLabel_ = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(iconImageView_.frame) + gap, topMargin, CGRectGetWidth(frame) - CGRectGetMaxX([iconImageView_ frame]) - gap * 2.0f, CGRectGetHeight(frame) - topMargin * 2.0f)];
         [messageLabel_ setBackgroundColor:[UIColor clearColor]];
-        [messageLabel_ setTextColor:[UIColor whiteColor]];
+        [messageLabel_ setTextColor:[UIColor darkGrayColor]];
         [messageLabel_ setAutoresizingMask:UIViewAutoresizingFlexibleRightMargin];
         
         [containerView_ addSubview:messageLabel_];

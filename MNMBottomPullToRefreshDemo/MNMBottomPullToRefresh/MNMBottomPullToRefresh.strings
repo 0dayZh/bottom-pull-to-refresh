@@ -22,5 +22,5 @@
  */
 
 "MNM_BOTTOM_PTR_PULL_TEXT" = "Pull to get more...";
-"MNM_BOTTOM_PTR_RELEASE_TEXT" = "Release now!";
+"MNM_BOTTOM_PTR_RELEASE_TEXT" = "Release to start loading";
 "MNM_BOTTOM_PTR_LOADING_TEXT" = "Loading...";
